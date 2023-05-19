@@ -157,6 +157,11 @@ header {
   justify-content: center;
   align-items: center;
   /* overflow: hidden; */
+  transition: height .2s ease;
+}
+
+.wrapper.active {
+  height: 32.5rem;
 }
 
 .wrapper .form-box {
@@ -165,12 +170,24 @@ header {
 }
 
 .wrapper .form-box.login {
-  /* display: none; */
+  transition: transform .18s ease;
+  transform: translateX(0);
 }
+
+/* .wrapper.active .form-box.login {
+  transition: none;
+  transform: translateX(-25rem);
+} */
 
 .wrapper .form-box.register {
   position: absolute;
+  transition: none;
   transform: translateX(25rem);
+}
+
+.wrapper.active .form-box.register {
+  transition: none;
+  transform: translateX(-25rem);
 }
 
 .wrapper .icon-close {
