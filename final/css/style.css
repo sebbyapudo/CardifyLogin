@@ -26,6 +26,14 @@
 body {
   font-family: var(--primary-font), sans-serif;
   font-size: 1.1em;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /* Making unordered lists easier to work with */
@@ -73,7 +81,6 @@ header {
   left: 0;
   width: 100vw;
   padding: 1.25rem 6.25rem; 
-  background: red;
   display: flex;
   justify-content: space-between;
   align-items: center;
